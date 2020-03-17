@@ -9,6 +9,8 @@ import Service from './service';
 
 export default function Services() {
 
+    document.title = "Productiiv - Services";
+
     let match = useRouteMatch();
 
     return (
@@ -17,11 +19,11 @@ export default function Services() {
 
             <ul>
                 <li>
-                    <Link to={`${match.url}/components`}>Components</Link>
+                    <Link to={`${match.url}/break-scheduler`}>Break Scheduler</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/props-v-state`}>
-                        Props v. State
+                    <Link to={`${match.url}/activity-time-tracker`}>
+                        Activity Time Tracker
           </Link>
                 </li>
             </ul>
