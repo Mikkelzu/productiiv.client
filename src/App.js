@@ -21,6 +21,42 @@ export default function App() {
     <Router>
 
       <div>
+        <div className="navbar-sticky">
+          <div className="container">
+            <div className="logo-wrapper d-inline-block">
+              <Link to="/"> <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="NestJS - A progressive Node.js framework" /> </Link>
+            </div>
+            <ul className="nav-wrapper d-inline-block">
+              <li className="hidden-xs">
+                <Link to="/about">
+                  ABOUT
+                      </Link>
+              </li>
+              <li className="hidden-sm">
+                <Link to="/services">
+                  SERVICES
+                    </Link>
+              </li>
+              <li>
+                <Link to="/pricing">
+                  PRICING
+                    </Link>
+              </li>
+              <li>
+                <Link to="/login">
+                  LOGIN
+                    </Link>
+              </li>
+              <li>
+                <Link to="/signup">
+                  SIGN UP!
+                    </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
         <header className="page-header">
           <div className="container">
             <div className="top-wrapper">
@@ -44,7 +80,7 @@ export default function App() {
                   </li>
                   <li>
                     <Link to="/pricing">
-                    PRICING
+                      PRICING
                     </Link>
                   </li>
                   <li>
@@ -80,7 +116,7 @@ export default function App() {
                       </li> */}
                 </ul>
               </nav>
-              <div className="main-wrapper">
+              <div className="main-wrapper text-align-center">
                 <h1 className="hero-title"> Productiiv.io</h1>
                 <h4 className="hero-subtitle"> A producitivity platform to keep track of your important business! </h4>
                 {/* <div className="buttons-wrapper">

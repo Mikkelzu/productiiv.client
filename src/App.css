@@ -1335,13 +1335,40 @@ a:active, a:focus {
   height: 100vh;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .hero-title, .hero-subtitle {
   text-align: center;
 }
 
+.hero-title {
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.hero-title::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e93333;
+  transition: width .4s;
+}
+
+.hero-title:hover::after {
+  width: 100%;
+}
+
+
 .highlighted-text {
   color: #ed1543;
   font-weight: 600;
+}
+.highlighted-text-secondary {
+  color: #090909;
+  font-weight: 600px;
 }
 
 .main-wrapper {
@@ -1707,7 +1734,7 @@ a:active, a:focus {
   -webkit-transform: translate3d(0, -100%, 0);
   transition: all .18s ease-in-out;
   -ms-transition: all .18s ease-in-out;
-  -webkit-transition:all .18s ease-in-out
+  -webkit-transition:all .18s ease-in-out;
 }
 
 .navbar-sticky.visible {
@@ -1743,11 +1770,9 @@ a:active, a:focus {
 }
 
 .enterprise-wrapper {
-  background-image: url(/2e87d126358935e3c9984030c481fc79197e3daa/support.b363d5ad.png);
-  background-position: 0 100%;
-  background-repeat: no-repeat;
   background-color: #ed1543;
-  height: 500px;
+  background-size: contain;
+  height: 435px;
   overflow:hidden
 }
 
@@ -1765,7 +1790,8 @@ a:active, a:focus {
 
 .enterprise-column p {
   font-weight: 500;
-  line-height:32px
+  line-height:32px;
+  font-size: 18px;
 }
 
 .enterprise-column .btn {
@@ -1877,7 +1903,7 @@ a:active, a:focus {
 
 @media (max-width: 1300px) {
   .enterprise-wrapper {
-      background-position:-250px bottom
+      background-position:-650px bottom
   }
 
   .enterprise-column {
