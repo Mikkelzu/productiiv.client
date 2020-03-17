@@ -13,6 +13,7 @@ import NotFound from "./pages/notfound/notfound";
 import Login from './pages/login/login';
 import Signup from './pages/signup/signup';
 import './App.css';
+import FooterComponent from './page-components/footer.component'
 
 export default function App() {
 
@@ -122,6 +123,8 @@ export default function App() {
           </Route>
         </Switch>
       </div>
+
+      <FooterComponent />
     </Router>
   );
 }
