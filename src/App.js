@@ -81,8 +81,8 @@ export default function App() {
                 </ul>
               </nav>
               <div className="main-wrapper">
-                <h1>Productiiv.io</h1>
-                <h4> A producitivity platform to keep track of your important business! </h4>
+                <h1 className="hero-title"> Productiiv.io</h1>
+                <h4 className="hero-subtitle"> A producitivity platform to keep track of your important business! </h4>
                 {/* <div className="buttons-wrapper">
                     <Link to="https://docs.nestjs.com" className="btn btn-primary d-inline-block">Documentation</Link>
                     <Link to="https://github.com/nestjs/nest" className="btn btn-secondary d-inline-block">

@@ -34,6 +34,15 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <div class="live-wrapper"> 
+                    <div class="container">
+                        <h4>Vision</h4>
+                        <p>
+                            We want to encourage <span className="highlighted-text">healthy productivty</span> at your own pace and stay <span className="highlighted-text">happy</span> and <span className="highlighted-text">healthy</span> while doing your work.
+                        </p> 
+                    </div>
+                </div>
             </div>
         )
     }
