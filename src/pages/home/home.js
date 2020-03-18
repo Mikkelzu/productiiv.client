@@ -49,7 +49,41 @@ export default class Home extends React.Component {
                         <div className="enterprise-column">
                             <h2> Get started for free or look at our pricings to determine your needs. </h2>
                             <p> We pride ourselves on putting <span className="highlighted-text-secondary">productivity</span> and <span className="highlighted-text-secondary">health</span> first. </p>
+                            <div className="row">
+                                <div className="col-md-3">
+                                    <h4 className="highlighted-text-secondary">Free</h4>
+                                    <p className="details">
+                                        Everyone should have the chance to at least give it a whirl!
+                                    </p>
+                                </div>
+                                <div className="col-md-3">
+                                    <h4 className="highlighted-text-secondary">Starter $5</h4>
+                                    <p className="details">
+                                        Perfect for freelancers or contractors, with some extra's like invoice generation and insights on time tracked.
+                                    </p>
+                                </div>
+                                <div className="col-md-3">
+                                    <h4 className="highlighted-text-secondary">Small Teams $10</h4>
+                                    <p className="details">
+                                        Aimed towards small teams of 5, with all the extra's from the <span className="highlighted-text-secondary">Starter</span> plan and some extra insights on team wide timers.
+                                    </p>
+                                </div>
+                                <div className="col-md-3">
+                                    <h4 className="highlighted-text-secondary">Custom Plan</h4>
+                                    <p className="details">
+                                        Need all of the same things as the <span className="highlighted-text-secondary">Small Teams</span> plan, but your team isn't so small? Don't hesitate and request a quote!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div className="live-wrapper">
+                    <div className="container">
+                        <h4>Get in touch</h4>
+                        <p>
+                            You can easily come in contact with us over at <a href="mailto:info@productiiv.io">info@productiiv.io</a>
+                        </p>
                     </div>
                 </div>
 

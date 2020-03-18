@@ -1348,6 +1348,12 @@ a:active, a:focus {
   transition: 0.2s ease;
 }
 
+
+.details {
+  line-height: 1 !important;
+  font-size: 14px !important;
+}
+
 .hero-title::after {
   content: '';
   display: block;
@@ -1770,6 +1776,8 @@ a:active, a:focus {
 }
 
 .enterprise-wrapper {
+  background-image: url(/cat-bg.png);
+  background-repeat: no-repeat;
   background-color: #ed1543;
   background-size: contain;
   height: 435px;
@@ -1903,7 +1911,7 @@ a:active, a:focus {
 
 @media (max-width: 1300px) {
   .enterprise-wrapper {
-      background-position:-650px bottom
+      background-position:-450px bottom
   }
 
   .enterprise-column {
