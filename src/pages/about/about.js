@@ -9,7 +9,29 @@ export default class About extends React.Component {
         document.title = "Productiiv - About Productiiv";
 
         return(
-            <h2>About</h2>
+            <section>
+                <div className="live-wrapper"> 
+                    <div className="container">
+                        <h4>About Productiiv.</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                        </p> 
+                    </div>
+                </div>
+
+                <div class="sponsors-wrapper" id="sponsors">
+                    <div class="container">
+                        <h4>Get in touch</h4>
+                        <p> Get in touch with us through the form below or simply by sending us an email to <a href="mailto:info@productiiv.io">info@productiiv.io</a> </p>
+                        <div class="support-section">
+                            <h5>Create form</h5>
+                            <form>
+                                todo
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         )
     }
 }

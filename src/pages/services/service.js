@@ -14,6 +14,4 @@ export default function Service() {
     } else {
         return <h2>Service doesnt exist.</h2>
     }
-
-    return <h3>requested id: {topicId}</h3>
 }

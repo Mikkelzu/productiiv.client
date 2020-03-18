@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 export default class Home extends React.Component {
 
@@ -12,21 +11,21 @@ export default class Home extends React.Component {
                         <div className="row">
                             <div className="col-md-4 highlight-block">
                                 <div className="icon-wrapper">
-                                    <img src="https://d33wubrfki0l68.cloudfront.net/af047ac54e246e4a16a9874f8f8e8b23b944786a/4f102/3d.87c64f5b.svg" />
+                                    <img alt="" src="https://d33wubrfki0l68.cloudfront.net/af047ac54e246e4a16a9874f8f8e8b23b944786a/4f102/3d.87c64f5b.svg" />
                                 </div>
                                 <h5>subtitle</h5>
                                 <p> Text for shit</p>
                             </div>
                             <div className="col-md-4 highlight-block">
                                 <div className="icon-wrapper">
-                                    <img src="https://d33wubrfki0l68.cloudfront.net/c62c21329677dea388a08c2da8912c6d655b935e/9b1d8/quality.2871f361.svg" />
+                                    <img alt="" src="https://d33wubrfki0l68.cloudfront.net/c62c21329677dea388a08c2da8912c6d655b935e/9b1d8/quality.2871f361.svg" />
                                 </div>
                                 <h5>subtitle</h5>
                                 <p> more text </p>
                             </div>
                             <div className="col-md-4 highlight-block">
                                 <div className="icon-wrapper">
-                                    <img src="https://d33wubrfki0l68.cloudfront.net/6fd3f1586e44b418a4afd53bc81c76f5d970f51a/d33f9/magic-wand.f171d0b3.svg" />
+                                    <img alt="" src="https://d33wubrfki0l68.cloudfront.net/6fd3f1586e44b418a4afd53bc81c76f5d970f51a/d33f9/magic-wand.f171d0b3.svg" />
                                 </div>
                                 <h5>subtitle</h5>
                                 <p> more text </p>
@@ -78,12 +77,16 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="live-wrapper">
-                    <div className="container">
+                <div class="sponsors-wrapper" id="sponsors">
+                    <div class="container">
                         <h4>Get in touch</h4>
-                        <p>
-                            You can easily come in contact with us over at <a href="mailto:info@productiiv.io">info@productiiv.io</a>
-                        </p>
+                        <p> Get in touch with us through the form below or simply by sending us an email to <a href="mailto:info@productiiv.io">info@productiiv.io</a> </p>
+                        <div class="support-section">
+                            <h5>Create form</h5>
+                            <form>
+                                todo
+                            </form>
+                        </div>
                     </div>
                 </div>
 
