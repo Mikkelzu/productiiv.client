@@ -36,27 +36,27 @@ export default function App() {
                 <ul className="nav-wrapper">
                   <li className="hidden-xs">
                     <NavLink activeClassName="active" to="/about">
-                      ABOUT
+                      ABOUT <i className="fas fa-comment-dots"></i>
                       </NavLink>
                   </li>
                   <li className="hidden-sm">
                     <NavLink activeClassName="active" to="/services">
-                      SERVICES
+                      SERVICES <i className="fas fa-layer-group"></i>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink activeClassName="active" to="/pricing">
-                      PRICING
+                      PRICING <i className="fas fa-dollar-sign"></i>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink activeClassName="active" to="/login">
-                      LOGIN
+                      LOGIN <i className="fas fa-paper-plane"></i>
                     </NavLink>
                   </li>
                   <li>
                     <NavLink activeClassName="active" to="/signup">
-                      SIGN UP!
+                      SIGN UP <i className="fas fa-user-plus"></i>
                     </NavLink>
                   </li>
                 </ul>
