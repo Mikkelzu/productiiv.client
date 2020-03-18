@@ -1780,11 +1780,10 @@ a:active, a:focus {
 }
 
 .enterprise-wrapper {
-  background-image: url(/cat-bg.png);
+  /* background-image: url(/wolf-bg.png); */
   background-repeat: no-repeat;
   background-color: #ed1543;
   background-size: contain;
-  height: 435px;
   overflow:hidden
 }
 
@@ -1859,6 +1858,10 @@ a:active, a:focus {
   position:relative
 }
 
+.form-group {
+  margin-bottom: 15px;
+}
+
 .newsletter-form .form-control {
   border: 0;
   font-size: 13px;
@@ -1880,8 +1883,7 @@ a:active, a:focus {
   margin-left: -45px;
   font-size: 14px;
   vertical-align: middle;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-radius: 3px;
   transition:all .2s ease-in-out
 }
 
