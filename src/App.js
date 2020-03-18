@@ -39,11 +39,11 @@ export default function App() {
                       ABOUT <i className="fas fa-comment-dots"></i>
                       </NavLink>
                   </li>
-                  <li className="hidden-sm">
+                  {/* <li className="hidden-sm">
                     <NavLink activeClassName="active" to="/services">
                       SERVICES <i className="fas fa-layer-group"></i>
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink activeClassName="active" to="/pricing">
                       PRICING <i className="fas fa-dollar-sign"></i>
@@ -66,8 +66,8 @@ export default function App() {
                 <h4 className="hero-subtitle"> A producitivity platform to keep track of your important business! </h4>
                 <div className="buttons-wrapper">
                   <h3>Check out our current platform services and give them a quick read!</h3>
-                  <Link to="/" className="btn btn-secondary d-inline-block">Activity Time Tracker</Link>
-                  <Link to="/" className="btn btn-secondary d-inline-block">Break Scheduler</Link>
+                  <Link to="/services/activity-time-tracker" className="btn btn-secondary d-inline-block">Activity Time Tracker</Link>
+                  <Link to="/services/break-scheduler" className="btn btn-secondary d-inline-block">Break Scheduler</Link>
                 </div>
               </div>
             </div>

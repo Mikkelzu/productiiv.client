@@ -15,18 +15,6 @@ export default function Services() {
 
     return (
         <div>
-            <h2>Topics</h2>
-
-            <ul>
-                <li>
-                    <Link to={`${match.url}/break-scheduler`}>Break Scheduler</Link>
-                </li>
-                <li>
-                    <Link to={`${match.url}/activity-time-tracker`}>
-                        Activity Time Tracker
-          </Link>
-                </li>
-            </ul>
 
             {/* The Topics page has its own <Switch> with more routes
           that build on the /topics URL path. You can think of the
@@ -34,7 +22,24 @@ export default function Services() {
           the page that is shown when no topic is selected */}
             <Switch>
                 <Route path={`${match.path}/:topicId`}>
-                    <Service />
+
+                    <div className="live-wrapper">
+                        <div className="container">
+                            <Service />
+                        </div>
+                    </div>
+                    <div className="sponsors-wrapper" id="sponsors">
+                        <div className="container">
+                            <h4>Get in touch</h4>
+                            <p> Get in touch with us through the form below or simply by sending us an email to <a href="mailto:info@productiiv.io">info@productiiv.io</a> </p>
+                            <div className="support-section">
+                                <h5>Create form</h5>
+                                <form>
+                                    todo
+                            </form>
+                            </div>
+                        </div>
+                    </div>
                 </Route>
                 <Route path={match.path}>
                     <h3>Please select a topic.</h3>
