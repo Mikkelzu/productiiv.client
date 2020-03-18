@@ -15,6 +15,7 @@ import Login from './pages/login/login';
 import Signup from './pages/signup/signup';
 import './App.css';
 import FooterComponent from './page-components/footer.component'
+import Pricing from "./pages/pricing/pricing";
 
 export default function App() {
 
@@ -82,6 +83,9 @@ export default function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/pricing">
+            <Pricing />
           </Route>
           <Route path="/services">
             <Services />
