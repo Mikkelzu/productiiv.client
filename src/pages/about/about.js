@@ -1,15 +1,17 @@
 import React from 'react';
+import NavbarComponent from '../../page-components/navbar.component';
 
 export default class About extends React.Component {
-
-
 
     render() {
 
         document.title = "Productiiv - About Productiiv";
 
         return(
-            <section>
+            <section style={{backgroundColor:'black'}}>
+                <div className="container" >
+                    <NavbarComponent />
+                </div>
                 <div className="live-wrapper"> 
                     <div className="container">
                         <h4>About Productiiv.</h4>

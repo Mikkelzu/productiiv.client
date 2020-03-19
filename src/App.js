@@ -16,64 +16,14 @@ import Signup from './pages/signup/signup';
 import './App.css';
 import FooterComponent from './page-components/footer.component'
 import Pricing from "./pages/pricing/pricing";
+import Profile from "./pages/app/profile/profile";
+import Dashboard from "./pages/app/dashboard/dashboard"
 
 export default function App() {
 
   return (
     <Router>
-
       <div>
-        <header className="page-header">
-          <div className="container">
-            <div className="top-wrapper">
-              <div className="logo-wrapper d-inline-block">
-                <Link to="/">
-                  <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="NestJS - A progressive Node.js framework" />
-                </Link>
-              </div>
-
-              <nav className="pull-right">
-                <ul className="nav-wrapper">
-                  <li className="hidden-xs">
-                    <NavLink activeClassName="active" to="/about">
-                      ABOUT <i className="fas fa-comment-dots"></i>
-                      </NavLink>
-                  </li>
-                  {/* <li className="hidden-sm">
-                    <NavLink activeClassName="active" to="/services">
-                      SERVICES <i className="fas fa-layer-group"></i>
-                    </NavLink>
-                  </li> */}
-                  <li>
-                    <NavLink activeClassName="active" to="/pricing">
-                      PRICING <i className="fas fa-dollar-sign"></i>
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink activeClassName="active" to="/login">
-                      LOGIN <i className="fas fa-paper-plane"></i>
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink activeClassName="active" to="/signup">
-                      SIGN UP <i className="fas fa-user-plus"></i>
-                    </NavLink>
-                  </li>
-                </ul>
-              </nav>
-              <div className="main-wrapper text-align-center">
-                <h1 className="hero-title"> Productiiv.io</h1>
-                <h4 className="hero-subtitle"> A producitivity platform to keep track of your important business! </h4>
-                <div className="buttons-wrapper">
-                  <h3>Check out our current platform services and give them a quick read!</h3>
-                  <Link to="/services/activity-time-tracker" className="btn btn-secondary d-inline-block">Activity Time Tracker</Link>
-                  <Link to="/services/break-scheduler" className="btn btn-secondary d-inline-block">Break Scheduler</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-
         <Switch>
           <Route path="/login">
             <Login />
@@ -92,6 +42,12 @@ export default function App() {
           </Route>
           <Route path="/">
             <Home />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
           <Route path="*">
             <NotFound />

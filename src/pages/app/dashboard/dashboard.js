@@ -1,13 +1,11 @@
 import React from 'react';
-import NavbarComponent from '../../page-components/navbar.component';
 
-export default class Login extends React.Component {
+export default class Dashboard extends React.Component {
 
     render() {
         return (
             <div style={{backgroundColor:'black'}}>
             <div className="container" >
-                <NavbarComponent />
             </div>
                 <div className="newsletter-wrapper">
                     <div className="signup container">

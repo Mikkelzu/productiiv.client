@@ -1,10 +1,14 @@
 import React from 'react';
+import NavbarComponent from '../../page-components/navbar.component';
 
 export default class Pricing extends React.Component {
 
     render() {
         return (
-            <section>
+            <section style={{backgroundColor:'black'}}>
+            <div className="container" >
+                <NavbarComponent />
+            </div>
                 <div className="highlights-wrapper">
                     <div className="container-fluid">
                         <div className="row">

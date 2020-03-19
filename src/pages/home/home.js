@@ -1,4 +1,5 @@
 import React from 'react'
+import { HeaderComponent } from '../../page-components/header.component';
 
 export default class Home extends React.Component {
 
@@ -6,6 +7,7 @@ export default class Home extends React.Component {
         document.title = "Productiiv - Your producitivty platform easily available.";
         return (
             <div>
+                <HeaderComponent />
                 <div className="highlights-wrapper">
                     <div className="container-fluid">
                         <div className="row">

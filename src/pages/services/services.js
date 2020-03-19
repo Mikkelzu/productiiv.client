@@ -6,6 +6,7 @@ import {
     useRouteMatch
 } from "react-router-dom";
 import Service from './service';
+import NavbarComponent from '../../page-components/navbar.component';
 
 export default function Services() {
 
@@ -14,8 +15,10 @@ export default function Services() {
     let match = useRouteMatch();
 
     return (
-        <div>
-
+        <div style={{ backgroundColor: 'black' }}>
+            <div className="container" >
+                <NavbarComponent />
+            </div>
             {/* The Topics page has its own <Switch> with more routes
           that build on the /topics URL path. You can think of the
           2nd <Route> here as an "index" page for all topics, or
