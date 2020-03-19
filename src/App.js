@@ -40,18 +40,26 @@ export default function App() {
           <Route path="/services">
             <Services />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+
+{/* APP ROUTES */}
           <Route path="/profile">
             <Profile />
           </Route>
           <Route path="/dashboard">
             <Dashboard />
           </Route>
+{/* END APP ROUTES */}
+
+
+          <Route path="/">
+            <Home />
+          </Route>
+
           <Route path="*">
             <NotFound />
           </Route>
+          
+          
         </Switch>
       </div>
 
