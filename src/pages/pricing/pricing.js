@@ -1,14 +1,15 @@
 import React from 'react';
 import NavbarComponent from '../../page-components/navbar.component';
+import ContactFormComponent from '../../page-components/contact.form.component';
 
 export default class Pricing extends React.Component {
 
     render() {
         return (
-            <section style={{backgroundColor:'black'}}>
-            <div className="container" >
-                <NavbarComponent />
-            </div>
+            <section style={{ backgroundColor: 'black' }}>
+                <div className="container" >
+                    <NavbarComponent />
+                </div>
                 <div className="highlights-wrapper">
                     <div className="container-fluid">
                         <div className="row">
@@ -49,10 +50,7 @@ export default class Pricing extends React.Component {
                         <h4>Get in touch</h4>
                         <p> Get in touch with us through the form below or simply by sending us an email to <a href="mailto:info@productiiv.io">info@productiiv.io</a> </p>
                         <div className="support-section">
-                            <h5>Create form</h5>
-                            <form>
-                                todo
-                            </form>
+                            <ContactFormComponent />
                         </div>
                     </div>
                 </div>

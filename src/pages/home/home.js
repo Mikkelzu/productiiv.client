@@ -1,5 +1,6 @@
 import React from 'react'
 import { HeaderComponent } from '../../page-components/header.component';
+import ContactFormComponent from '../../page-components/contact.form.component';
 
 export default class Home extends React.Component {
 
@@ -84,10 +85,7 @@ export default class Home extends React.Component {
                         <h4>Get in touch</h4>
                         <p> Get in touch with us through the form below or simply by sending us an email to <a href="mailto:info@productiiv.io">info@productiiv.io</a> </p>
                         <div className="support-section">
-                            <h5>Create form</h5>
-                            <form>
-                                todo
-                            </form>
+                            <ContactFormComponent />
                         </div>
                     </div>
                 </div>

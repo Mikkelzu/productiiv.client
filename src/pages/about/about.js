@@ -1,5 +1,6 @@
 import React from 'react';
 import NavbarComponent from '../../page-components/navbar.component';
+import ContactFormComponent from '../../page-components/contact.form.component';
 
 export default class About extends React.Component {
 
@@ -7,17 +8,17 @@ export default class About extends React.Component {
 
         document.title = "Productiiv - About Productiiv";
 
-        return(
-            <section style={{backgroundColor:'black'}}>
+        return (
+            <section style={{ backgroundColor: 'black' }}>
                 <div className="container" >
                     <NavbarComponent />
                 </div>
-                <div className="live-wrapper"> 
+                <div className="live-wrapper">
                     <div className="container">
                         <h4>About Productiiv.</h4>
                         <p>
                             Lorem ipsum dolor sit amet.
-                        </p> 
+                        </p>
                     </div>
                 </div>
 
@@ -26,10 +27,7 @@ export default class About extends React.Component {
                         <h4>Get in touch</h4>
                         <p> Get in touch with us through the form below or simply by sending us an email to <a href="mailto:info@productiiv.io">info@productiiv.io</a> </p>
                         <div className="support-section">
-                            <h5>Create form</h5>
-                            <form>
-                                todo
-                            </form>
+                            <ContactFormComponent />
                         </div>
                     </div>
                 </div>

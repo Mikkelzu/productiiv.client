@@ -9,7 +9,7 @@ export default class NavbarComponent extends React.Component {
             <div className="top-wrapper">
                 <div className="logo-wrapper d-inline-block">
                     <Link to="/">
-                        <img src='logo_small_icon_only_inverted.png' alt=""/>
+                        <img src='/logo_small_icon_only_inverted.png' alt=""/>
                     </Link>
                 </div>
 
