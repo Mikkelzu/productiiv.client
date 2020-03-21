@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink
 } from "react-router-dom";
 
 import Home from './pages/home/home';
@@ -20,7 +18,7 @@ import Profile from "./pages/app/profile/profile";
 import Dashboard from "./pages/app/dashboard/dashboard"
 
 export default function App() {
-
+  
   return (
     <Router>
       <div>
