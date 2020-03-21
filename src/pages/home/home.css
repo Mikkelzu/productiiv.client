@@ -1,0 +1,8 @@
+.icon-wrapper .fas {
+    transition: 0.3s ease;
+}
+
+.icon-wrapper .fas:hover {
+    transform: scale(1.1);
+    color: #ed1543;
+}

@@ -25,7 +25,7 @@ export default class FooterComponent extends React.Component {
                             </Link>
                         </div> */}
                         <p>
-                            Just some stuff
+                            <span className="highlighted-text-secondary">Productiiv.io</span> - <span className="highlighted-text">Your productivity platform easily available.</span>
                             <br />
                             Copyright Productiiv.io 2020
                         </p>

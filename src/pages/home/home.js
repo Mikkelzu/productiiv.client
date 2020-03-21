@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeaderComponent } from '../../page-components/header.component';
 import ContactFormComponent from '../../page-components/contact.form.component';
+import './home.css'
 
 export default class Home extends React.Component {
 
@@ -14,24 +15,28 @@ export default class Home extends React.Component {
                         <div className="row">
                             <div className="col-md-4 highlight-block">
                                 <div className="icon-wrapper">
-                                    <img alt="" src="https://d33wubrfki0l68.cloudfront.net/af047ac54e246e4a16a9874f8f8e8b23b944786a/4f102/3d.87c64f5b.svg" />
+                                    {/* <img alt="" src="https://d33wubrfki0l68.cloudfront.net/af047ac54e246e4a16a9874f8f8e8b23b944786a/4f102/3d.87c64f5b.svg" /> */}
+
+                                    <i className="fas fa-hourglass-half fa-6x"></i>
                                 </div>
-                                <h5>subtitle</h5>
-                                <p> Text for shit</p>
+                                <h5>Track your activity times</h5>
+                                <p> lorem ipsum dolor sit amet. </p>
                             </div>
                             <div className="col-md-4 highlight-block">
                                 <div className="icon-wrapper">
-                                    <img alt="" src="https://d33wubrfki0l68.cloudfront.net/c62c21329677dea388a08c2da8912c6d655b935e/9b1d8/quality.2871f361.svg" />
+                                    {/* <img alt="" src="https://d33wubrfki0l68.cloudfront.net/c62c21329677dea388a08c2da8912c6d655b935e/9b1d8/quality.2871f361.svg" /> */}
+                                    <i className="fas fa-bell fa-6x"></i>
                                 </div>
-                                <h5>subtitle</h5>
-                                <p> more text </p>
+                                <h5>Schedule regular breaks</h5>
+                                <p> lorem ipsum dolor sit amet. </p>
                             </div>
                             <div className="col-md-4 highlight-block">
                                 <div className="icon-wrapper">
-                                    <img alt="" src="https://d33wubrfki0l68.cloudfront.net/6fd3f1586e44b418a4afd53bc81c76f5d970f51a/d33f9/magic-wand.f171d0b3.svg" />
+                                    {/* <img alt="" src="https://d33wubrfki0l68.cloudfront.net/6fd3f1586e44b418a4afd53bc81c76f5d970f51a/d33f9/magic-wand.f171d0b3.svg" /> */}
+                                    <i className="fas fa-exclamation fa-6x"></i>
                                 </div>
-                                <h5>subtitle</h5>
-                                <p> more text </p>
+                                <h5>More to come!</h5>
+                                <p> lorem ipsum dolor sit amet.</p>
                             </div>
                         </div>
                     </div>
