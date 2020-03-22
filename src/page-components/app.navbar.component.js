@@ -4,6 +4,19 @@ import './navbar.style.css';
 
 export default class AppNavbarComponent extends React.Component {
 
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+
+        }
+    }
+
+    logout = () => {
+        // todo destroy cookie from session
+    }
+
     render() {
 
         return (
@@ -28,13 +41,19 @@ export default class AppNavbarComponent extends React.Component {
                         </li>
                         <li>
                             <NavLink activeClassName="active" to="/profile">
-                                Fuck this shit framework <i className="fas fa-user"></i>
+                                {this.props.username} <i className="fas fa-user"></i>
                             </NavLink>
                         </li>
 
                         <li>
-                            <Link to="/breaks">
+                            <NavLink to="/breaks">
                                 Break Scheduler <i className="fas fa-coffee"></i>
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <Link alt="sign out" to="/" onClick={ () => { this.logout()} }>
+                            <i alt="Sign out" className="fas fa-sign-out-alt"></i>
                             </Link>
                         </li>
                     </ul>
