@@ -10,7 +10,6 @@ export default class Login extends React.Component {
 
         this.state = {
             redirect: false,
-            access_token: ''
         }
         
     }
@@ -22,7 +21,8 @@ export default class Login extends React.Component {
 
         axios.post('http://localhost:3000/auth/login', payload)
             .then(res => {
-                this.setState({ redirect: true, access_token: res.data.access_token })
+                console.log(res.headers)
+                this.setState({ redirect: true})
             })
             .catch(err => {
                 console.log(err)
