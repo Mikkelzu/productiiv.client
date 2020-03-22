@@ -19,7 +19,7 @@ export default class Login extends React.Component {
 
         const payload = { username: event.target.username.value, password: event.target.password.value };
 
-        axios.post('http://localhost:3000/auth/login', payload)
+        axios.post('http://localhost:3000/auth/login', payload, {withCredentials: true})
             .then(res => {
                 console.log(res.headers)
                 this.setState({ redirect: true})

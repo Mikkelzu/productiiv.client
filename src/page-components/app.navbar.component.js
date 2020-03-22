@@ -5,6 +5,7 @@ import './navbar.style.css';
 export default class AppNavbarComponent extends React.Component {
 
     render() {
+
         return (
             <div className="top-wrapper">
                 <div className="logo-wrapper d-inline-block">
@@ -27,12 +28,12 @@ export default class AppNavbarComponent extends React.Component {
                         </li>
                         <li>
                             <NavLink activeClassName="active" to="/profile">
-                                NAME <i className="fas fa-user"></i>
+                                Fuck this shit framework <i className="fas fa-user"></i>
                             </NavLink>
                         </li>
 
                         <li>
-                            <Link>
+                            <Link to="/breaks">
                                 Break Scheduler <i className="fas fa-coffee"></i>
                             </Link>
                         </li>
