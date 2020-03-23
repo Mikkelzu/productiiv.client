@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './navbar.style.css';
+import Axios from 'axios';
 
 export default class AppNavbarComponent extends React.Component {
 
@@ -14,7 +15,25 @@ export default class AppNavbarComponent extends React.Component {
     }
 
     logout = () => {
+
+        var cookie = document.cookie;
+
+        if (cookie) {
+            console.log(cookie)
+        }
+
         // todo destroy cookie from session
+        Axios.get('http://localhost:3000/auth/logout', {withCredentials: true})
+            .then(res => {
+                console.log(res)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+            .finally(() => {
+                console.log('finito');
+                
+            })
     }
 
     render() {
@@ -52,7 +71,7 @@ export default class AppNavbarComponent extends React.Component {
                         </li>
 
                         <li>
-                            <Link alt="sign out" to="/" onClick={ () => { this.logout()} }>
+                            <Link alt="sign out" to="/profile" onClick={ () => { this.logout()} }>
                             <i alt="Sign out" className="fas fa-sign-out-alt"></i>
                             </Link>
                         </li>
