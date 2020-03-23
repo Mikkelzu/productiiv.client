@@ -11,10 +11,10 @@ export default class Profile extends React.Component {
             user: {}
         }
 
-        this.getCookieData();
+        this.getProfile();
     }
 
-    getCookieData() {
+    getProfile() {
         return Axios.get('http://localhost:3000/profile', {withCredentials:true})
             .then((res) => {
                 console.log(res.data)
@@ -33,6 +33,7 @@ export default class Profile extends React.Component {
                 console.log('finished.')
             })
     }
+    
     render() {
         return(
             <div style={{ backgroundColor: 'black' }}>
